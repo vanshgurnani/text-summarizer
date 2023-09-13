@@ -10,7 +10,7 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 nltk.download('stopwords')
- nltk.download('punkt')
+nltk.download('punkt')
 
 @app.route('/')
 def hello_world():
