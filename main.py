@@ -54,10 +54,6 @@ def get_summary():
     return jsonify({"summary": summary, "accuracy": accuracy})
 
 def calculate_accuracy(original_text, generated_summary):
-    # Implement your custom accuracy calculation logic here
-    # You can compare the similarity or overlap between the original text and the generated summary
-    # For example, you can use a text similarity metric like cosine similarity or Jaccard similarity
-    # The exact calculation depends on your specific requirements
 
     # As a placeholder, this example calculates accuracy based on the ratio of shared words
     original_words = set(original_text.lower().split())
